@@ -61,9 +61,22 @@ else:
 # desea saber cuanto dinero perderá después de ser sometido a la
 # revisión.
 
-contpromedio = float(input('Digite valor de la contaminación promedio: '))
-gandiaria = 500000
-perdida = (gandiaria * 7) * 0.50
+cont1 = float(input('Digite valor de la contaminación día 1: '))
+cont2 = float(input('Digite valor de la contaminación día 2: '))
+cont3 = float(input('Digite valor de la contaminación día 3: '))
+cont4 = float(input('Digite valor de la contaminación día 4: '))
+cont5 = float(input('Digite valor de la contaminación día 5: '))
+contpromedio = (cont1 + cont2 + cont3 + cont4 + cont5) / 5
+gd1 = float(input('Digite ganacia del día 1: '))
+gd2 = float(input('Digite ganacia del día 2: '))
+gd3 = float(input('Digite ganacia del día 3: '))
+gd4 = float(input('Digite ganacia del día 4: '))
+gd5 = float(input('Digite ganacia del día 5: '))
+gd6 = float(input('Digite ganacia del día 6: '))
+gd7 = float(input('Digite ganacia del día 7: '))
+gandiaria = gd1 + gd2 + gd3 + gd4 + gd5 + gd6 + gd7
+perdida = gandiaria * 0.50
+print(f'El promedio de contaminación es de: {contpromedio}')
 if contpromedio <= 170:
     print('No hay sanción ni multa.')
 else:
